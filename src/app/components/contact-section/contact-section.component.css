@@ -1,0 +1,37 @@
+.social_media_icon {
+    transition: transform 0.13s ease-in-out;
+}
+.social_media_icon:hover {
+    transform: scale(1.1);
+}
+.social_media_icon:active {
+    color: var(--primary_backgroundColor);
+    transform: scale(1);
+}
+
+.link-darker-animation {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+}
+.link-darker-animation::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    left: 0;
+    bottom: -3px;
+
+    background-color: #ffffff;
+
+    transform: scaleX(0);
+    transform-origin: center bottom;
+    transition: transform 0.25s ease-out;
+
+}
+
+.link-darker-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: center top;
+}

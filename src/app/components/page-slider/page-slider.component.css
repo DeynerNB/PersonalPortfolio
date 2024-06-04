@@ -1,0 +1,21 @@
+.slider {
+    position: fixed;
+    width: 15px;
+    height: 100vh;
+
+    top: 0;
+    right: 30px;
+
+    background-color: red;
+}
+
+.slider_ball {
+    width: 45px;
+    height: 45px;
+
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+
+    right: calc( calc(-1 * (45px / 2)) + calc(15px / 2) );
+}

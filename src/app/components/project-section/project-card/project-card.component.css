@@ -1,0 +1,39 @@
+.project_card_container {
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 7px;
+
+    /* cursor: pointer; */
+}
+
+.project_description_container {
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.project_description {
+    background-color: #0000007d;
+    height: 100%;
+
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project_card_container:hover {
+    background-color: #0000004d;
+    outline: 2px solid var(--secondary_backgroundColor);
+    transform: scale(1.02);
+}
+
+.project_card_container:hover .project_description {
+    transform: translateX(0);
+}
+
+.card_link_container {
+    text-decoration: none;
+}
+
+@media (min-width: 992px) {
+    .project_card_container {
+        width: 75%;
+    }
+}
