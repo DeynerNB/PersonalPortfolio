@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 })
 export class MainSectionComponent {
     full_page_title: string = "Personal Portfolio"
-    page_title: string = "Personal Portfolio"
+    page_title: string = "P"
+
+    constructor() {
+        this.setPageTile()
+    }
 
     setPageTile = (): void => {
         let index: number = 1;
