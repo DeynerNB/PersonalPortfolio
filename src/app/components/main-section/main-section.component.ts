@@ -1,4 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'component-main-section',
@@ -9,11 +9,7 @@ import { Component, OnInit  } from '@angular/core';
 })
 export class MainSectionComponent {
     full_page_title: string = "Personal Portfolio"
-    page_title: string = "P"
-
-    ngOnInit() {
-        this.setPageTile()
-    }
+    page_title: string = "Personal Portfolio"
 
     setPageTile = (): void => {
         let index: number = 1;
