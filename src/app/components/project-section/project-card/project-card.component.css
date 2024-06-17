@@ -13,7 +13,9 @@
 .project_description {
     background-color: #0000007d;
     height: 100%;
+}
 
+.project_slider_container {
     transform: translateX(-150%);
     transition: transform 0.3s ease-in-out;
 }
@@ -24,12 +26,18 @@
     transform: scale(1.02);
 }
 
-.project_card_container:hover .project_description {
+.project_card_container:hover .project_slider_container {
     transform: translateX(0);
 }
 
 .card_link_container {
     text-decoration: none;
+}
+
+.language-badge {
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: #663399;
 }
 
 @media (min-width: 992px) {

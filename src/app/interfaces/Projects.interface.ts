@@ -3,4 +3,5 @@ export interface ProjectInformation {
     Description: string
     Image: string
     ProjectLink: string
+    Languages: string[]
 }

@@ -20,6 +20,9 @@ export class ProjectCardComponent {
     @Input()
     public cardLink: string = "#";
 
+    @Input()
+    public cardLanguages: string[] = [];
+
     public openProjectPage() {
         window.open(this.cardLink, "_blank");
     }
