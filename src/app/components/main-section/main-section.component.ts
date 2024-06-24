@@ -1,9 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DisplayAsciiComponent } from '../display-ascii/display-ascii.component';
 
 @Component({
     selector: 'component-main-section',
     standalone: true,
-    imports: [],
+    imports: [
+        DisplayAsciiComponent
+    ],
     templateUrl: './main-section.component.html',
     styleUrl: './main-section.component.css'
 })
