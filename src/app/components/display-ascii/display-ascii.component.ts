@@ -12,8 +12,6 @@ export class DisplayAsciiComponent {
     ascii_design: string = COMPUTER_ASCII;
     ascii_value: string = "";
 
-    
-
     ngOnInit() {
         this.setPageTile()
     }
