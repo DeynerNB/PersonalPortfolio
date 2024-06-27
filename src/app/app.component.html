@@ -1,4 +1,20 @@
-<component-main-section id="main-section"></component-main-section>
-<component-about-section id="about-section"></component-about-section>
-<component-project-section id="project-section"></component-project-section>
-<component-contact-section id="contact-section"></component-contact-section>
+<div class="position-relative overflow-hidden"
+    (mousemove)="onMouseMove($event)"
+>
+    <div
+        #mouse_div
+        class="mouse-light"
+        [ngStyle]="{'left.px': mouseX, 'top.px': mouseY}"
+    ></div>
+    <div class="row w-100 px-4 px-md-0 py-5 justify-content-center">
+        <div class="col col-md-9">
+            <component-main-section id="main-section"></component-main-section>
+            <component-about-section id="about-section"></component-about-section>
+            <hr>
+            <component-project-section id="project-section"></component-project-section>
+            <hr>
+            <component-contact-section id="contact-section"></component-contact-section>
+        </div>
+    </div>
+</div>
+
