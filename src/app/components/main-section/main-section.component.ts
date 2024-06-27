@@ -11,8 +11,8 @@ import { DisplayAsciiComponent } from '../display-ascii/display-ascii.component'
     styleUrl: './main-section.component.css'
 })
 export class MainSectionComponent {
-    full_page_title: string = "Personal Portfolio"
-    page_title: string = "P"
+    full_page_title: string = "Deyner Navarro"
+    page_title: string = "D"
 
     ngOnInit() {
         this.setPageTile()

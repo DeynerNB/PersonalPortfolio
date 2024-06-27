@@ -46,5 +46,5 @@
 }
 
 .external_link:hover {
-    color: var(--primary_backgroundColor);
+    color: var(--secondary_backgroundColor_variant);
 }

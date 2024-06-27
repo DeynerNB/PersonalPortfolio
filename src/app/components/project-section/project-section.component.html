@@ -1,5 +1,16 @@
-<div class="p-4">
-    <h2 class="main_subtitle">Projects</h2>
+<div class="row pt-5">
+    <div class="col d-flex flex-column flex-md-row justify-content-between">
+        <h2 class="main_subtitle secondary-color-variant-text">Projects</h2>
+        <div class="link_container mt-4 fs-5">
+            <a
+                class="project_list_link link_underline_animation link-light link-underline-opacity-0 icon-link icon-link-hover position-relative"
+                target="_blank"
+                href="https://github.com/DeynerNB">
+                Check out full project list
+                <span class="material-symbols-outlined arrow_link">arrow_forward</span>
+            </a>
+        </div>
+    </div>
     <div class="container-fluid">
         @for (projectInformation of this.projects_information; track $index) {
             <component-project-card
@@ -10,17 +21,5 @@
                 [cardLanguages]="projectInformation.Languages"
             ></component-project-card>
         }
-        <div class="row">
-            <div class="col link_container mt-4">
-                <a
-                    class="project_list_link link_underline_animation link-light link-underline-opacity-0 icon-link icon-link-hover position-relative"
-                    target="_blank"
-                    href="https://github.com/DeynerNB">
-                    Check out full project list
-                    <span class="material-symbols-outlined arrow_link">arrow_forward</span>
-                    <!-- <div class="link_slider"></div> -->
-                </a>
-            </div>
-        </div>
     </div>
 </div>

@@ -4,17 +4,19 @@
             <img src={{cardImage}} alt="project_image" class="img-thumbnail">
         </div>
         <div class="col-12 col-sm-6 col-md-9 d-flex flex-column">
-            <span class="fs-4">{{cardTitle}}</span>
+            <div>
+                <span class="fs-4">{{cardTitle}}</span>
+                <div class="mb-2">
+                    @for (language of cardLanguages; track $index) {
+                        <span class="language-badge me-2">{{language}}</span>
+                    }
+                </div>
+            </div>
             <div class="project_description_container flex-grow-1">
-                <div class="pb-1 project_slider_container d-flex flex-column h-100">
+                <div class="project_slider_container d-flex flex-column h-100">
                     <p class="project_description p-3">
                         {{cardDescription}}
                     </p>
-                    <div>
-                        @for (language of cardLanguages; track $index) {
-                            <span class="language-badge ms-2">{{language}}</span>
-                        }
-                    </div>
                 </div>
             </div>
         </div>

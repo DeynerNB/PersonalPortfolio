@@ -1,8 +1,6 @@
 .project_card_container {
     transition: background-color 0.3s, transform 0.3s;
     border-radius: 7px;
-
-    /* cursor: pointer; */
 }
 
 .project_description_container {
@@ -36,12 +34,8 @@
 
 .language-badge {
     padding: 5px 10px;
-    border-radius: 7px;
+    border-radius: 16px;
     background-color: #663399;
-}
 
-@media (min-width: 992px) {
-    .project_card_container {
-        width: 75%;
-    }
+    min-width: 50px;
 }
