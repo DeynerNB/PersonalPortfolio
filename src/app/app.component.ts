@@ -5,7 +5,6 @@ import { MainSectionComponent } from './components/main-section/main-section.com
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ProjectSectionComponent } from './components/project-section/project-section.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
-import { PageSliderComponent } from './components/page-slider/page-slider.component';
 
 @Component({
     selector: 'app-root',
@@ -18,7 +17,6 @@ import { PageSliderComponent } from './components/page-slider/page-slider.compon
         AboutSectionComponent,
         ProjectSectionComponent,
         ContactSectionComponent,
-        PageSliderComponent
     ],
 })
 export class AppComponent {
@@ -38,9 +36,15 @@ export class AppComponent {
             return;
         }
 
-        const rect = this.mouse_div.nativeElement.getBoundingClientRect();
-        this.offsetW = rect.width / 2;
-        this.offsetH = rect.height / 2;
+        setTimeout(() => {
+            const rect = this.mouse_div.nativeElement.getBoundingClientRect();
+            this.offsetW = rect.width / 2;
+            this.offsetH = rect.height / 2;
+
+            // Forzar la posición inicial al centro de la pantalla
+            this.mouseX = window.innerWidth / 2 - this.offsetW;
+            this.mouseY = window.innerHeight / 2 - this.offsetH;
+        });
     }
 
     onMouseMove(event: MouseEvent) {
